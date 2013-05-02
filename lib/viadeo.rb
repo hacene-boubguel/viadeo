@@ -1,5 +1,9 @@
 require "viadeo/version"
 
 module Viadeo
-  # Your code goes here...
+  class << self
+    def version_string
+      "Viadeo version #{Viadeo::VERSION}"
+    end
+  end
 end
