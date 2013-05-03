@@ -1,0 +1,68 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.viadeo.com/search/users?limit=5&school=paris
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Viadeo gem/0.0.1
+      Authorization:
+      - Bearer access_token_test_3e8c55877482b2
+      Content-Type:
+      - application/x-www-form-urlencoded;charset=UTF-8
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - ! '*/*'
+  response:
+    status:
+      code: 200
+      message: !binary |-
+        T0s=
+    headers:
+      !binary "U2VydmVy":
+      - !binary |-
+        QXBhY2hlLUNveW90ZS8xLjE=
+      !binary "VXVpZA==":
+      - !binary |-
+        Y2Q0MzJiZjEtMGJiYi00ODU4LTgxOWItMTdkNjg0ZjE4MzY2
+      !binary "Q29udGVudC1UeXBl":
+      - !binary |-
+        YXBwbGljYXRpb24vanNvbjtjaGFyc2V0PVVURi04
+      !binary "RGF0ZQ==":
+      - !binary |-
+        RnJpLCAwMyBNYXkgMjAxMyAxMjoxNDoyMyBHTVQ=
+      !binary "Q29udGVudC1FbmNvZGluZw==":
+      - !binary |-
+        Z3ppcA==
+      !binary "VHJhbnNmZXItRW5jb2Rpbmc=":
+      - !binary |-
+        Y2h1bmtlZA==
+      !binary "VmFyeQ==":
+      - !binary |-
+        QWNjZXB0LUVuY29kaW5n
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAE/6tWykxRslJS0lEqqSxIBbKCXR2DnD0U3PyDFEKDXYOCgTJ5
+        ibkgGSArJzMvG8jKKCkpsNLXLy8v1yvLTExJzddLzs/VL9MvTk0sSs7Qz03N
+        TUotKta3L07OyM/P8QNqty1ILMosVstJzEsvTUxPtU0rApqWnF+aV6JkZWgA
+        BDpKBYnpmXnpSlbVSgVFqWWZ+aXFEDvzUitKoHYWAy1NLMhEthRqZWkx0EL7
+        nMzczBJbUzWIvVA7C0D2GSnV6iiVFqQklqSmxJdkgv1jZGBorGtgqmtgHGJo
+        YgVERibaBkYGBjCXxReXFIFdpGQHdiJQHKg/UckqGhpoZaXF/qkV+XmJ6f6u
+        BeVlFXnFYWE55bmp2f5K8OAEhSHIE5AgdM3NTcwrTc1RcHf0dXIMClFwcVXw
+        8XT383QNcgWFNN7wLSjKT8vMSdU3MDAqKy0qyqi0yMssTkoHaYMGK1ArOGCx
+        etRY18g0xNDIysjSythI2wDoJWCYQH1SWFSV6OqZl1tQUZAWVlZZUZDj4l9S
+        nJldmq2EwyeORXmJpSkKzo5Orj4+jn4gRxDpdiPTirKyQtMK47zEckOQPmIc
+        b6JrZB5iYGxlBEKQWII73jPVvyzbM7WiKKkyq8y1rKiioqw4NT2lKtFRiUA0
+        5KQq+KTmJWbmgZxBpPMN07OrLA2MTCpLqoyNQPqIDHvLEANLKxMjK2MztLAP
+        SynzzEpMDSvLKkrJLCkrrUwrTq5MqkzKxZmKnFLz8jNLFLxTixLLUpNBbiDW
+        7UBXl5capFtWFlhkgPQRdLuRLggB3W5gZWxhZWyJ5vaCrPLUsoIKz5LK3IJM
+        l6qkgoqS8sIKx6yKfCUcbg/KzwXmymQFJz2Q/cS62ywxozyzzKKgJC25DKSP
+        mDAHutssxNDQytTUysQQ6G4DA6Xa2FoApSCFmfAEAAA=
+    http_version: 
+  recorded_at: Fri, 03 May 2013 12:14:24 GMT
+recorded_with: VCR 2.4.0

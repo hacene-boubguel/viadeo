@@ -20,6 +20,7 @@ require "viadeo/user"
 require "viadeo/newsfeed"
 require "viadeo/recommend"
 require "viadeo/reference_data"
+require "viadeo/search"
 
 #error
 require "viadeo/error"
