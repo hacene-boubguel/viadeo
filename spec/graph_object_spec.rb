@@ -3,7 +3,7 @@ require 'spec_helper'
 describe Viadeo::GraphObject do
   describe ".initialize" do
     before(:all) do
-      access_token = "14a70e8b62746c714273763029892b87"
+      access_token = "access_token_test_3e8c55877482b2"
       id = "azertyazerty"
       @graph_object = Viadeo::GraphObject.new(access_token, id: id)
     end
@@ -54,7 +54,7 @@ describe Viadeo::GraphObject do
 
   describe ".new_from" do
     before(:all) do
-      access_token = "14a70e8b62746c714273763029892b87"
+      access_token = "access_token_test_3e8c55877482b2"
       data = { id: "azertyazerty", name: "dupond", email: "dupond@example.com"}
       @graph_object = Viadeo::GraphObject.new_from(data, access_token)
     end
@@ -95,7 +95,7 @@ describe Viadeo::GraphObject do
 
   describe "Utils methods" do
     before(:all) do
-      access_token = "14a70e8b62746c714273763029892b87"
+      access_token = "access_token_test_3e8c55877482b2"
       @data = { id: "azertyazerty", name: "dupond", email: "dupond@example.com"}
       @graph_object = Viadeo::GraphObject.new_from(@data, access_token)
     end
@@ -122,7 +122,7 @@ describe Viadeo::GraphObject do
 
     describe "#reset" do
       before(:each) do
-        access_token = "14a70e8b62746c714273763029892b87"
+        access_token = "access_token_test_3e8c55877482b2"
         @data = { id: "azertyazerty", name: "dupond", email: "dupond@example.com"}
         @graph_object = Viadeo::GraphObject.new_from(@data, access_token)
       end

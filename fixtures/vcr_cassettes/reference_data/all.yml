@@ -1,0 +1,40 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.viadeo.com/language/list?limit=5
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Viadeo gem/0.0.1
+      Authorization:
+      - Bearer access_token_test_3e8c55877482b2
+      Content-Type:
+      - application/x-www-form-urlencoded;charset=UTF-8
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - ! '*/*'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Apache-Coyote/1.1
+      Uuid:
+      - 29aa5fa8-3a56-4e5e-9e99-54b828b8e01f
+      Content-Type:
+      - application/json;charset=UTF-8
+      Content-Length:
+      - '895'
+      Date:
+      - Fri, 03 May 2013 12:07:05 GMT
+    body:
+      encoding: US-ASCII
+      string: ! '{"id":"","type":"LANGUAGES","name":"","link":"","count":188,"paging":{"previous":"","next":"https://api.viadeo.com/language/list?limit=5&page=2"},"updated_time":"2013-05-03T14:07:06+0200","count_string":"188","data":[{"id":"","type":"LANGUAGE","name":"Abkhaze","link":"","updated_time":"2013-05-03T14:07:06+0200","ISO_639":"ab","ISO_639-2_T":"abk"},{"id":"","type":"LANGUAGE","name":"Afar","link":"","updated_time":"2013-05-03T14:07:06+0200","ISO_639":"aa","ISO_639-2_T":"aar"},{"id":"","type":"LANGUAGE","name":"Afrikaans","link":"","updated_time":"2013-05-03T14:07:06+0200","ISO_639":"af","ISO_639-2_T":"afr"},{"id":"","type":"LANGUAGE","name":"Akan","link":"","updated_time":"2013-05-03T14:07:06+0200","ISO_639":"ak","ISO_639-2_T":"aka"},{"id":"","type":"LANGUAGE","name":"Albanais","link":"","updated_time":"2013-05-03T14:07:06+0200","ISO_639":"sq","ISO_639-2_T":"sqi","ISO_639-2_B":"alb"}]}'
+    http_version: 
+  recorded_at: Fri, 03 May 2013 12:07:07 GMT
+recorded_with: VCR 2.4.0

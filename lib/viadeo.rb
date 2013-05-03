@@ -11,6 +11,7 @@ require "viadeo/request"
 require "viadeo/operations/create"
 require "viadeo/operations/update"
 require "viadeo/operations/get"
+require "viadeo/operations/list"
 
 #Graph Objects
 require "viadeo/graph_object"
@@ -18,6 +19,7 @@ require "viadeo/graph_connection"
 require "viadeo/user"
 require "viadeo/newsfeed"
 require "viadeo/recommend"
+require "viadeo/reference_data"
 
 #error
 require "viadeo/error"
