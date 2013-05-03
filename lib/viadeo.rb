@@ -21,6 +21,7 @@ require "viadeo/newsfeed"
 require "viadeo/recommend"
 require "viadeo/reference_data"
 require "viadeo/search"
+require "viadeo/status"
 
 #error
 require "viadeo/error"
