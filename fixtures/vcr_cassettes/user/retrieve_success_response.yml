@@ -1,0 +1,41 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.viadeo.com/me
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Viadeo gem/0.0.1
+      Authorization:
+      - Bearer access_token_test_3e8c55877482b2
+      Content-Type:
+      - application/x-www-form-urlencoded;charset=UTF-8
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - ! '*/*'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Apache-Coyote/1.1
+      Uuid:
+      - 8ee1b9ae-b75e-467c-acd4-ca2cc9027e1d
+      Content-Type:
+      - application/json;charset=UTF-8
+      Content-Length:
+      - '1021'
+      Date:
+      - Fri, 03 May 2013 11:05:14 GMT
+    body:
+      encoding: US-ASCII
+      string: ! '{"id":"obumgDrDseyOzclAhhmxlnetzc","type":"USER","name":"Neceha Bgl","link":"http://www.viadeo.com/profile/0021igiwa56ywlp9","language":"fr","gender":"","nickname":"neceha.bgl","introduction":"","interests":"---","location":{"city":"Montmorency","address":"","zipcode":"","country":"France","area":"","county":{"name":"","type":"COUNTY"},"timezone":"","latitude":"","longitude":"","country_code":"fr"},"distance":0,"updated_time":"2013-05-03T13:04:34+0200","contact_count":0,"first_name":"Neceha","last_name":"Bgl","has_picture":false,"picture_small":"http://static9.viadeo-static.com/servlet/photo?memberId=0129038bhu8xks8&height=35&width=26&ts=1367570046000","picture_medium":"http://static9.viadeo-static.com/servlet/photo?memberId=0129038bhu8xks8&height=60&width=45&ts=1367570046000","picture_large":"http://static9.viadeo-static.com/servlet/photo?memberId=0129038bhu8xks8&height=185&width=140&ts=1367570046000","picture_modification_date":"2013-05-03T10:34:06+0200","headline":"Freelance,
+        neceha","is_premium":false}'
+    http_version: 
+  recorded_at: Fri, 03 May 2013 11:05:15 GMT
+recorded_with: VCR 2.4.0

@@ -1,0 +1,40 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.viadeo.com/me/contacts?is_premium=true
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Viadeo gem/0.0.1
+      Authorization:
+      - Bearer access_token_test_3e8c55877482b2
+      Content-Type:
+      - application/x-www-form-urlencoded;charset=UTF-8
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - ! '*/*'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Apache-Coyote/1.1
+      Uuid:
+      - adc9fe02-7af3-4d84-ac54-cbb0d5f8ca77
+      Content-Type:
+      - application/json;charset=UTF-8
+      Content-Length:
+      - '261'
+      Date:
+      - Fri, 03 May 2013 11:05:16 GMT
+    body:
+      encoding: US-ASCII
+      string: ! '{"id":"","type":"USER CONTACTS","name":"Neceha Bgl","link":"http://www.viadeo.com/profile/0021igiwa56ywlp9/fr/?readOnly=true&currentab=contacts","count":0,"paging":{"previous":"","next":""},"updated_time":"2013-05-03T13:05:17+0200","count_string":"0","data":[]}'
+    http_version: 
+  recorded_at: Fri, 03 May 2013 11:05:17 GMT
+recorded_with: VCR 2.4.0

@@ -1,0 +1,40 @@
+---
+http_interactions:
+- request:
+    method: put
+    uri: https://api.viadeo.com/me?interests=---
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Viadeo gem/0.0.1
+      Authorization:
+      - Bearer access_token_test_3e8c55877482b2
+      Content-Type:
+      - application/x-www-form-urlencoded;charset=UTF-8
+      Content-Length:
+      - '0'
+      Accept:
+      - ! '*/*'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Apache-Coyote/1.1
+      Uuid:
+      - 67d17999-da99-4b73-a6a9-7953f2e1df49
+      Content-Type:
+      - application/json;charset=UTF-8
+      Content-Length:
+      - '16'
+      Date:
+      - Fri, 03 May 2013 11:05:20 GMT
+    body:
+      encoding: US-ASCII
+      string: ! '{"updated":true}'
+    http_version: 
+  recorded_at: Fri, 03 May 2013 11:05:21 GMT
+recorded_with: VCR 2.4.0

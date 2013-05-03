@@ -7,8 +7,15 @@ require "viadeo/util"
 require "viadeo/configuration"
 require "viadeo/request"
 
+#Operations
+require "viadeo/operations/create"
+require "viadeo/operations/update"
+require "viadeo/operations/get"
+
 #Graph Objects
 require "viadeo/graph_object"
+require "viadeo/graph_connection"
+require "viadeo/user"
 
 #error
 require "viadeo/error"

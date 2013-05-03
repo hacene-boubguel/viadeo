@@ -2,7 +2,7 @@ require 'spec_helper'
 describe Viadeo::Util do
   describe ".convert_to_graph_object" do
 
-    let(:access_token) { "9f83ff3ee7b06c72673e8c55877482b2"}
+    let(:access_token) { "access_token_test_3e8c55877482b2"}
     
     context "Hash data given" do
       before :each do

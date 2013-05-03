@@ -1,0 +1,41 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.viadeo.com/azerty
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Viadeo gem/0.0.1
+      Authorization:
+      - Bearer access_token_test_3e8c55877482b2
+      Content-Type:
+      - application/x-www-form-urlencoded;charset=UTF-8
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - ! '*/*'
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Server:
+      - Apache-Coyote/1.1
+      Uuid:
+      - a0f66453-d66f-47a4-a576-a286608ddcb7
+      Content-Type:
+      - application/json;charset=UTF-8
+      Content-Length:
+      - '106'
+      Date:
+      - Fri, 03 May 2013 11:05:12 GMT
+    body:
+      encoding: US-ASCII
+      string: ! '{"error":{"type":"url not found, id error or unsupported method","message":["Not
+        Found/Not Implemented"]}}'
+    http_version: 
+  recorded_at: Fri, 03 May 2013 11:05:13 GMT
+recorded_with: VCR 2.4.0
