@@ -1,0 +1,56 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.viadeo.com/recommend?limit=5&url=http://dev.viadeo.com
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Viadeo gem/0.0.1
+      Authorization:
+      - Bearer access_token_test_3e8c55877482b2
+      Content-Type:
+      - application/x-www-form-urlencoded;charset=UTF-8
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - ! '*/*'
+  response:
+    status:
+      code: 200
+      message: !binary |-
+        T0s=
+    headers:
+      !binary "U2VydmVy":
+      - !binary |-
+        QXBhY2hlLUNveW90ZS8xLjE=
+      !binary "VXVpZA==":
+      - !binary |-
+        ZjYzMGVjYjAtYjRkZC00MmRjLTk0YmUtM2RhMjdiMjQ2MWMx
+      !binary "Q29udGVudC1UeXBl":
+      - !binary |-
+        YXBwbGljYXRpb24vanNvbjtjaGFyc2V0PVVURi04
+      !binary "Q29udGVudC1MZW5ndGg=":
+      - !binary |-
+        NDQ5
+      !binary "RGF0ZQ==":
+      - !binary |-
+        RnJpLCAwMyBNYXkgMjAxMyAxMTo1OTo0MCBHTVQ=
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJpZCI6IiIsInR5cGUiOiJSRUNPTU1FTkQgREVUQUlMUyIsIm5hbWUiOiIi
+        LCJsaW5rIjoiaHR0cDovL2Rldi52aWFkZW8uY29tIiwiY291bnQiOjEsInBh
+        Z2luZyI6eyJwcmV2aW91cyI6IiIsIm5leHQiOiIifSwic2hhcmVkIjpmYWxz
+        ZSwidGl0bGUiOiIiLCJvdmVydmlldyI6IiIsImRvbWFpbiI6ImRldi52aWFk
+        ZW8uY29tIiwidXBkYXRlZF90aW1lIjoiMjAxMy0wNS0wM1QxMzo1OTo0MSsw
+        MjAwIiwiY291bnRfc3RyaW5nIjoiMSIsImRhdGEiOlt7ImlkIjoic3JoenJp
+        cGF5RUVpY0llbWtwSW5FemZzSWMiLCJ0eXBlIjoiU0hBUkVSIiwibmFtZSI6
+        IlN0w6lwaGFuZSBMdW9uZyIsImxpbmsiOiJodHRwOi8vd3d3LnZpYWRlby5j
+        b20vcHJvZmlsZS8wMDIyOGIxYnFsbnh0anpuIiwibGFuZ3VhZ2UiOiJmciIs
+        InVwZGF0ZWRfdGltZSI6IjIwMTMtMDQtMjJUMTc6Mzg6MzMrMDIwMCJ9XX0=
+    http_version: 
+  recorded_at: Fri, 03 May 2013 11:59:42 GMT
+recorded_with: VCR 2.4.0

@@ -1,0 +1,43 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.viadeo.com/recommend?title=Get%20started%20with%20the%20Viadeo%20API&url=http://dev.viadeo.com
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Viadeo gem/0.0.1
+      Authorization:
+      - Bearer access_token_test_3e8c55877482b2
+      Content-Type:
+      - application/x-www-form-urlencoded;charset=UTF-8
+      Content-Length:
+      - '0'
+      Accept:
+      - ! '*/*'
+  response:
+    status:
+      code: 401
+      message: Unauthorized
+    headers:
+      Server:
+      - Apache-Coyote/1.1
+      Uuid:
+      - c3a81eb0-ee32-47a9-a031-4cb424d3477d
+      Www-Authenticate:
+      - ! '"insufficient authentication"'
+      Content-Type:
+      - application/json;charset=UTF-8
+      Content-Length:
+      - '85'
+      Date:
+      - Fri, 03 May 2013 11:59:43 GMT
+    body:
+      encoding: US-ASCII
+      string: ! '{"error":{"type":"permission denied","message":["Insufficient accreditation
+        level"]}}'
+    http_version: 
+  recorded_at: Fri, 03 May 2013 11:59:44 GMT
+recorded_with: VCR 2.4.0

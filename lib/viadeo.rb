@@ -17,6 +17,7 @@ require "viadeo/graph_object"
 require "viadeo/graph_connection"
 require "viadeo/user"
 require "viadeo/newsfeed"
+require "viadeo/recommend"
 
 #error
 require "viadeo/error"
