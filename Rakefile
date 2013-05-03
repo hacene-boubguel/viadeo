@@ -11,3 +11,18 @@ Rake::RDocTask.new do |rdoc|
   rdoc.main = 'README.md'
 end
 
+desc "Start irb with viadeo as gem"
+task :dev_console do
+  sh "irb -I lib -rubygems -r viadeo"
+end
+
+desc "Build gem"
+task :gem do
+  exec('gem build viadeo.gemspec')
+end
+
+desc "clean generated files"
+task :clean do
+  rm_f Dir.glob('*.gem').join(" ")
+  rm_rf "rdoc"
+end
