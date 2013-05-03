@@ -11,6 +11,11 @@ module Viadeo
           data
         end
       end
+
+      def filter_response(response)
+        data = response.body.split("\r\n\r\n")[-1]
+        data = MultiJson.load(data, :symbolize_keys => true)
+      end
     end
   end
 end
