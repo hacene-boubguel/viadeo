@@ -1,3 +1,5 @@
 require 'rspec'
 require 'simplecov'
+require 'vcr'
+require 'support/vcr_setup'
 require 'viadeo'
