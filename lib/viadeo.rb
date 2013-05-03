@@ -16,6 +16,7 @@ require "viadeo/operations/get"
 require "viadeo/graph_object"
 require "viadeo/graph_connection"
 require "viadeo/user"
+require "viadeo/newsfeed"
 
 #error
 require "viadeo/error"
