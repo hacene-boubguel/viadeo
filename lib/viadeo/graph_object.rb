@@ -46,10 +46,9 @@ module Viadeo
       @access_token = access_token
       add_accessors(values.keys)
       values.each do |k, v|
-        @values[k] = Util.convert_to_graph_object(v, access_token)
+        @values[k] = v
         @updated_attributes.delete(k)
       end
-      log("response : graph_object : ", self)
       self
     end
 
@@ -82,11 +81,15 @@ module Viadeo
       @values.each(&blk)
     end
 
+    def data_to_graph_object
+      Util.convert_to_graph_object(@values[:data], access_token)
+    end
+
     protected
 
     def log(message, arg=nil)
       message += " : " + arg.inspect if arg
-      puts message
+      Viadeo.log message
     end
 
     def metaclass

@@ -137,5 +137,27 @@ describe Viadeo::GraphObject do
         @graph_object.values.should be_empty
       end
     end
+    describe "#data_to_graph_object" do
+      before(:all) do
+        access_token = "access_token_test_3e8c55877482b2"
+        data_list = [] 
+        1.upto(5) do |x|
+          data_list << {id: x, name: "contact#{x}", email: "contact#{x}@email.com"}
+        end
+        data = { id: "azertyazerty", name: "dupond", email: "dupond@example.com", data: data_list}
+        graph_object = Viadeo::GraphObject.new_from(data, access_token)
+        @data_graph_object = graph_object.data_to_graph_object
+      end
+
+      it "should return a list of GraphObject elements" do
+        @data_graph_object.each do |e|
+          e.should be_a_kind_of(Viadeo::GraphObject)
+        end
+      end
+
+      it "should have 5 elements" do
+        @data_graph_object.size.should eql(5)
+      end
+    end
   end
 end
