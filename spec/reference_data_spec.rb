@@ -1,13 +1,13 @@
 require "spec_helper"
 require "shared_graph_object"
 describe Viadeo::ReferenceData do
-  build = lambda do
+  limit = 5
+  subject do 
     reference_data = Viadeo::ReferenceData.new("access_token_test_3e8c55877482b2", resource: "language")
     VCR.use_cassette 'reference_data/all' do
-      reference_data.all(limit: 5)
+      reference_data.all(limit: limit)
     end
   end
-  let(:limit) {5} 
-  include_examples "shared_graph_object", graph_object = build.call
-  it {graph_object.type.should be_eql("LANGUAGES") }
+  include_examples "shared_graph_object", limit
+  it {subject.type.should be_eql("LANGUAGES") }
 end

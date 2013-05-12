@@ -8,5 +8,5 @@ require 'logger'
 logger = Logger.new(STDOUT)
 logger.level = Logger::DEBUG
 Viadeo.configure do |config|
-  config.logger = logger
+  config.logger = nil #logger
 end
