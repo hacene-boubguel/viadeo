@@ -1,5 +1,4 @@
 require "spec_helper"
-require "shared_graph_object"
 describe Viadeo::ReferenceData do
   limit = 5
   subject do 

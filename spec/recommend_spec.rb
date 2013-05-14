@@ -1,6 +1,4 @@
 require "spec_helper"
-require "shared_graph_object"
-require "shared_create_graph_object"
 describe Viadeo::Recommend do
   describe "#retrive (Retrieve recommended URL infos.)" do
     limit = 5

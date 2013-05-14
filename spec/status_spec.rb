@@ -1,5 +1,4 @@
 require "spec_helper"
-require "shared_create_graph_object"
 describe Viadeo::Status do
   describe "#create (Post a status)" do
     subject do
